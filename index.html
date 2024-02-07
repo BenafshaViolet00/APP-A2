@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>APP-WEB-DEV-A2</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cute Outfits</h1>
+        </header>
+        <div class="row-content">
+            <div class="row1">
+                <div class="products" id="image1">
+                    <img src="bag.jpg"  alt="pink bag">
+                    <p class="price">Product</p>
+                    <p class="price">$200</p>
+                </div>
+
+                <div class="products" id="image2">
+                    <img src="red.jpg" alt="red dress">
+                    <p class="price">Product</p>
+                    <p class="price">$500</p>
+                </div>
+
+                <div class="products" id="image3">
+                    <img src="shoe.jpg" alt="Shoes">
+                    <p class="price">Product</p>
+                    <p class="price">$120</p>
+                </div>
+            </div>
+            <div class="subtotal">
+                <strong>subtotal:</strong>
+                $<span id="total">0</span>
+            </div>
+        </div>
+        <script>
+            //sam prices with javascript
+            document.querySelector("#image1").onclick = function() {
+            let total = document.querySelector("#total").textContent;
+            total = parseInt(total);
+            total = total + 200;
+            console.log(total);
+            document.querySelector("#total").textContent = total;
+            }
+            //sam prices with javascript
+             document.querySelector("#image2").onclick = function() {
+            let total = document.querySelector("#total").textContent;
+            total = parseInt(total);
+            total = total + 500;
+            console.log(total);
+            document.querySelector("#total").textContent = total;
+            }
+            //sam prices with javascript
+             document.querySelector("#image3").onclick = function() {
+            let total = document.querySelector("#total").textContent;
+            total = parseInt(total);
+            total = total + 120;
+            console.log(total);
+            document.querySelector("#total").textContent = total;
+            }
+        </script>
+
+        <footer id="footer">
+            Made by Benafsha Hashimi💜
+        </footer>
+    </body>
+</html>
